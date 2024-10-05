@@ -1,24 +1,13 @@
-class Account {
-  name: string;
-  accountNumber: number;
+import {dioAccount} from "./Class/DioAccount";
+import {peopleAcconut} from "./Class/PeopleAccount";
+import {companyAccount} from "./Class/CompanyAccount";
 
-  constructor(name: string, accountNumber: number) {
-    this.name = name;
-    this.accountNumber = accountNumber;
-  }
+// const newPeopleAccount: peopleAcconut = new peopleAcconut(1212, "Kleber", 3);
+// console.log(newPeopleAccount)
+// newPeopleAccount.depoist()
 
-  depoist = () => {
-    console.log("Você depositou");
-  };
+const newCompanyAccount : companyAccount = new companyAccount("teste", 999 )
+newCompanyAccount.deposit()
+//! newCompanyAccount.accountNumber = 11
 
-  withdraw = () => {
-    console.log("Você Sacou");
-  };
-}
-
-const newAccount: Account = new Account("Diego", 1);
-
-console.log(newAccount);
-newAccount.depoist()
-newAccount.withdraw()
 
